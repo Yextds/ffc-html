@@ -1,0 +1,750 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --------------------------------------------
+Default
+-----------------------------------------------*/
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-Thin.eot');
+  src: url('fonts/Raleway-Thin.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Raleway-Thin.woff2') format('woff2'),
+      url('fonts/Raleway-Thin.woff') format('woff'),
+      url('fonts/Raleway-Thin.ttf') format('truetype'),
+      url('fonts/Raleway-Thin.svg#Raleway-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-ExtraLight.eot');
+  src: url('fonts/Raleway-ExtraLight.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Raleway-ExtraLight.woff2') format('woff2'),
+      url('fonts/Raleway-ExtraLight.woff') format('woff'),
+      url('fonts/Raleway-ExtraLight.ttf') format('truetype'),
+      url('fonts/Raleway-ExtraLight.svg#Raleway-ExtraLight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-Black.eot');
+  src: url('fonts/Raleway-Black.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Raleway-Black.woff2') format('woff2'),
+      url('fonts/Raleway-Black.woff') format('woff'),
+      url('fonts/Raleway-Black.ttf') format('truetype'),
+      url('fonts/Raleway-Black.svg#Raleway-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-Bold.eot');
+  src: url('fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Raleway-Bold.woff2') format('woff2'),
+      url('fonts/Raleway-Bold.woff') format('woff'),
+      url('fonts/Raleway-Bold.ttf') format('truetype'),
+      url('fonts/Raleway-Bold.svg#Raleway-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-ExtraBold.eot');
+  src: url('fonts/Raleway-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Raleway-ExtraBold.woff2') format('woff2'),
+      url('fonts/Raleway-ExtraBold.woff') format('woff'),
+      url('fonts/Raleway-ExtraBold.ttf') format('truetype'),
+      url('fonts/Raleway-ExtraBold.svg#Raleway-ExtraBold') format('svg');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-Light.eot');
+  src: url('fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Raleway-Light.woff2') format('woff2'),
+      url('fonts/Raleway-Light.woff') format('woff'),
+      url('fonts/Raleway-Light.ttf') format('truetype'),
+      url('fonts/Raleway-Light.svg#Raleway-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-Medium.eot');
+  src: url('fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Raleway-Medium.woff2') format('woff2'),
+      url('fonts/Raleway-Medium.woff') format('woff'),
+      url('fonts/Raleway-Medium.ttf') format('truetype'),
+      url('fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-Regular.eot');
+  src: url('fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Raleway-Regular.woff2') format('woff2'),
+      url('fonts/Raleway-Regular.woff') format('woff'),
+      url('fonts/Raleway-Regular.ttf') format('truetype'),
+      url('fonts/Raleway-Regular.svg#Raleway-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-SemiBold.eot');
+  src: url('fonts/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Raleway-SemiBold.woff2') format('woff2'),
+      url('fonts/Raleway-SemiBold.woff') format('woff'),
+      url('fonts/Raleway-SemiBold.ttf') format('truetype'),
+      url('fonts/Raleway-SemiBold.svg#Raleway-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('fonts/BebasNeue-Regular.eot');
+  src: url('fonts/BebasNeue-Regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/BebasNeue-Regular.woff2') format('woff2'),
+      url('fonts/BebasNeue-Regular.woff') format('woff'),
+      url('fonts/BebasNeue-Regular.ttf') format('truetype'),
+      url('fonts/BebasNeue-Regular.svg#BebasNeue-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body{
+  @apply font-normal text-light_black font-raleway text-sm lg:text-base;
+}
+body.menu-opened{
+  @apply overflow-hidden lg:overflow-auto;
+}
+h1, .h1{
+  @apply text-4xl lg:text-[70px] font-bebas_neue leading-snug lg:leading-[80px] font-normal;
+}
+h2, .h2{
+  @apply text-3xl md:text-4xl lg:text-[56px] font-bebas_neue leading-snug lg:leading-[66px] font-normal;
+}
+h3, .h3{
+  @apply text-[28px] lg:text-[40px] font-bebas_neue leading-snug lg:leading-[48px] font-normal;
+}
+h4, .h4{
+  @apply text-xl md:text-2xl font-bebas_neue leading-8 font-normal;
+}
+.button{
+  @apply inline-flex align-top justify-center items-center py-2 lg:py-3 px-2 font-semibold bg-blue hover:bg-dark_blue text-white rounded min-w-[170px] md:min-w-[200px] transition-all duration-300;
+}
+.container{
+  @apply max-w-[1600px] px-[15px] md:px-5;
+}
+
+.sec_heading{
+  @apply mb-1.5 text-blue
+}
+
+/* --------------------------------------------
+Header
+-----------------------------------------------*/
+.header-top{
+  @apply lg:pt-2.5 lg:pb-2 shadow-[0px_0px_3px_rgba(0,0,0,0.16)]
+}
+.logo{
+  @apply w-[250px] lg:w-auto pt-1 lg:pt-0
+}
+.app-link{
+  @apply hidden lg:flex flex-row items-center pb-0.5;
+}
+.app-link a{
+  @apply ml-6;
+}
+.app-link a img{
+  @apply h-10;
+}
+
+.navigation{
+  @apply bg-blue text-white;
+}
+.navigation ul.main-nav{
+  @apply flex flex-col lg:flex-row fixed lg:relative -right-full lg:right-auto top-[62px] lg:top-auto bottom-0 lg:bottom-auto bg-white lg:bg-transparent z-50 lg:z-auto w-full lg:w-auto max-w-full sm:max-w-[360px] lg:max-w-none overflow-x-hidden overflow-y-auto lg:overflow-visible transition-all ease-in-out duration-200 lg:-ml-2.5;
+}
+.menu-opened .navigation ul.main-nav{
+  @apply right-0
+}
+.navigation ul.main-nav > li{
+  @apply lg:border-r border-white lg:hover:bg-dark_blue;
+}
+.navigation ul.main-nav > li > a{
+  @apply pr-6 border-b border-b-[#d9d9d9] lg:border-b-0 w-full after:content-none lg:after:content-[''] after:border-t-4 after:border-t-white after:border-l-4 after:border-l-transparent after:border-r-4 after:border-r-transparent after:absolute after:top-1/2 after:right-2.5 after:-mt-0.5;
+}
+.navigation ul.main-nav a{
+  @apply text-light_black lg:text-white font-semibold lg:font-normal text-base px-5 lg:px-2.5 leading-[50px] uppercase relative inline-block align-middle;
+}
+.navigation .social-links li:last-child{
+  @apply mr-0;
+}
+.navigation .submenu{
+  @apply lg:absolute lg:top-full lg:left-0 lg:z-10 lg:bg-[#09093e] lg:w-[225px] transition-all duration-300 lg:max-h-0 overflow-hidden;
+}
+.navigation ul.main-nav > li:last-child .submenu{
+  @apply left-auto right-0;
+}
+.navigation ul.main-nav > li:hover .submenu{
+  @apply max-h-60;
+}
+.navigation .submenu a{
+  @apply w-full lg:hover:bg-dark_blue border-b border-b-[#d9d9d9] lg:border-b-0 w-full;
+}
+.navigation ul.main-nav .submenu a{
+  @apply pl-10 lg:pl-5;
+}
+
+.menu-btn{
+  @apply w-11 h-[61px] border-l border-transparent relative lg:hidden;
+}
+.menu-opened .menu-btn{
+  @apply border-[#d9d9d9]
+}
+.menu-btn span, .menu-btn span:after, .menu-btn span:before{
+  @apply absolute w-[25px] h-[3px] bg-blue block content-[''] right-0;
+}
+.menu-btn span:after{
+  @apply transition-all ease-in-out duration-200 -bottom-[7px] ml-0;
+}
+.menu-btn span:before{
+  @apply transition-all ease-in-out duration-200 -top-[7px] ml-0;
+}
+.menu-opened .menu-btn span{
+  @apply bg-transparent;
+}
+.menu-opened .menu-btn span:before{
+  @apply transform rotate-45 top-0 bg-red;
+}
+.menu-opened .menu-btn span:after{
+  @apply transform -rotate-45 bottom-0 bg-red;
+}
+
+.store-locator-link{
+  @apply lg:hidden ml-auto mr-3.5;
+}
+.store-locator-link svg{
+  @apply w-5;
+}
+
+
+
+/* --------------------------------------------
+Breadcrumb
+-----------------------------------------------*/
+.breadcrumb ul{
+  @apply flex flex-wrap md:flex-row items-center leading-5 md:leading-9 text-[10px] md:text-sm pt-2 pb-2 md:py-0;
+}
+.breadcrumb ul li{
+  @apply align-middle text-red font-medium md:font-normal;
+}
+.breadcrumb ul li svg{
+  @apply w-3 md:w-4
+}
+.breadcrumb ul li a{
+  @apply inline-flex items-center min-h-[20px] md:h-9 align-top text-light_black hover:text-red after:w-1 after:md:w-1.5 after:h-1 after:md:h-1.5 after:transform after:rotate-45 after:border-r after:border-t after:mx-1 after:md:mx-2.5 after:border-light_black transition-all duration-300; 
+}
+
+/* --------------------------------------------
+Hero Area
+-----------------------------------------------*/
+.hero{
+  @apply relative pt-4 md:pt-8 pb-[30px] md:pb-12 z-0 text-white text-sm lg:text-2xl font-semibold lg:font-normal after:absolute after:top-0 after:left-0 after:bottom-0 after:right-0 after:bg-black after:bg-opacity-50 after:-z-[1];
+}
+.hero .hero-img{
+  @apply absolute top-0 left-0 w-full h-full object-cover object-center -z-[1];
+}
+.hero p{
+  @apply my-2
+}
+.hero .cta_btn{
+  @apply mt-6
+}
+.hero .cta_btn .button{
+  @apply bg-white text-blue text-base hover:bg-dark_blue hover:text-white
+}
+
+/* --------------------------------------------
+Location information
+-----------------------------------------------*/
+.location-information{
+  @apply pt-6 lg:pt-8 pb-5 lg:pb-[30px];
+}
+.store-time-status{
+  @apply text-blue;
+}
+.store-time-status strong{
+  @apply text-red font-normal;
+}
+.boxes{
+  @apply flex flex-wrap -mx-[15px] sm:-mx-2.5 lg:-mx-[15px];
+}
+.boxes .location_details{
+  @apply flex flex-wrap w-full xl:w-[900px] 2xl:w-[945px]
+}
+.box{
+  @apply px-[15px] sm:px-2.5 lg:px-[15px];
+}
+.box.store-info{
+  @apply w-full md:w-[370px] lg:w-1/2 xl:w-[430px];
+}
+.box.store-timing{
+  @apply w-full md:w-[calc(100%_-_370px)] lg:w-1/2 xl:w-[470px] 2xl:w-[515px] mt-2.5 md:mt-0;
+}
+.box.store-social{
+  @apply w-full mt-5 lg:mt-[30px];
+}
+.box.map-info{
+  @apply w-full mt-5 lg:mt-[30px] xl:mt-0 xl:w-[calc(100%_-_900px)] 2xl:w-[calc(100%_-_945px)];
+}
+.box .inner-box{
+  @apply bg-black bg-opacity-[0.02] p-[15px] md:p-4 h-full;
+}
+.box.map-info .inner-box{
+  @apply pt-[64%] md:pt-0 h-0 md:h-96 xl:h-full p-0 relative overflow-hidden;
+}
+.box h4{
+  @apply border-b-2 border-b-red pb-0 md:pb-2 mb-[15px] md:mb-5;
+}
+.store-address{
+  @apply relative pl-5 md:pl-9 mb-4 min-h-[34px] flex items-center flex-wrap;
+}
+.store-address h2{
+  @apply font-raleway text-base leading-6 m-0 p-0;
+}
+.store-address svg{
+  @apply absolute top-0 md:top-1 left-0 w-3.5 md:w-auto;
+}
+
+.store-phone{
+  @apply relative pl-5 md:pl-9 mb-6 inline-block w-full align-top;
+}
+.store-phone a{
+  @apply  transition-all duration-300 hover:text-blue
+}
+.store-phone svg{
+  @apply absolute top-0 left-0 w-3.5 md:w-auto;
+}
+
+.store-link{
+  @apply flex flex-wrap justify-center md:justify-between;
+}
+.store-link a{
+  @apply inline-flex align-top justify-center items-center py-2 px-2 font-semibold;
+}
+.store-link .direction{
+  @apply bg-red hover:bg-dark_blue text-white rounded w-[calc(50%_-_5px)] xl:w-[170px] transition-all duration-300;
+}
+.store-link .call-store{
+  @apply w-[calc(50%_-_5px)] xl:w-[188px] bg-blue hover:bg-dark_blue text-white rounded ml-2.5 md:ml-0 transition-all duration-300;
+}
+.store-link a svg{
+  @apply mr-1.5 w-4 md:w-auto fill-white;
+}
+.store-link .call-store svg{
+  @apply h-[15px]
+}
+
+.other-services{
+  @apply mt-6 md:mt-6;
+}
+.other-services .service-row{
+  @apply flex flex-row leading-6 items-center mb-4 last:mb-0;
+}
+.other-services .service-row label{
+  @apply font-semibold w-[115px] md:w-[135px];
+}
+.other-services .service-row .status{
+  @apply bg-green text-xs md:text-sm leading-6 md:leading-6 min-w-[80px] text-center px-1.5 text-white rounded tracking-widest ml-auto;
+}
+.other-services .service-row .status.offline{
+  @apply bg-blue
+}
+.other-services .service-row .avability{
+  @apply w-[60px] text-white text-center text-xs md:text-sm rounded bg-blue leading-6 md:leading-6;
+}
+.other-services .service-row .avability.no{
+  @apply bg-red
+}
+.available-on{
+  @apply flex flex-wrap justify-between items-end mt-[18px];
+}
+.order-btn{
+  @apply inline-flex align-top justify-center items-center py-2 px-4 sm:px-6 font-semibold bg-blue hover:bg-dark_blue text-white rounded;
+}
+.order-btn svg{
+  @apply mr-2.5
+}
+.available-option{
+  @apply text-left;
+}
+.available-option h5{
+  @apply font-semibold text-base md:text-base leading-7;
+}
+.available-option ul{
+  @apply flex flex-wrap justify-center lg:justify-end;
+}
+.available-option ul li{
+  @apply mt-2.5 mr-2.5 last:mr-0;
+}
+.available-option ul li img{
+  @apply w-10 lg:w-[50px] transition-all duration-200 transform scale-100 hover:scale-105
+}
+
+.hours{
+  @apply w-full;
+}
+.hours .time-row{
+  @apply flex flex-row w-full justify-between first:font-semibold first:uppercase leading-9 pl-9 pr-1.5;
+}
+.hours .time-row .day{
+  @apply w-[calc(100%_-_12rem)] lg:w-[calc(100%_-_256px)];
+}
+.hours .time-row .store-time{
+  @apply w-24 lg:w-32;
+}
+.hours .time-row .delivery-time{
+  @apply w-24 lg:w-32;
+}
+.hours .time-row.currentDay{
+  @apply text-white bg-blue relative before:w-3.5 before:h-2 before:border-l-2 before:border-l-white before:border-b-2 before:border-b-white before:transform before:-rotate-45 before:absolute before:top-3 before:left-2.5;
+}
+.additional-text{
+  @apply mt-2.5 pt-2.5 border-t border-t-[#d9d9d9]
+}
+
+.box.store-social .inner-box{
+  @apply bg-blue flex items-center justify-between py-2
+}
+.box.store-social h4{
+  @apply m-0 p-0 border-0 text-white
+}
+.box.store-social .social-links{
+  @apply flex;
+}
+.box.store-social .social-links li{
+  @apply mr-0 ml-4 md:ml-6 first:ml-0;
+}
+.box.store-social .social-links li a{
+  @apply w-auto h-auto
+}
+.box.store-social .social-links li a svg{
+  @apply h-5
+}
+.map-info img{
+  @apply absolute top-0 left-0 w-full h-full object-cover object-center;
+}
+
+/* --------------------------------------------
+About
+-----------------------------------------------*/
+.about-sec{
+  @apply bg-black bg-opacity-[0.02] pt-4 md:pt-8 pb-5 md:pb-9;
+}
+.about-content{
+  @apply leading-6 md:leading-7;
+}
+.about-content .cta_btn{
+  @apply flex justify-center md:justify-start w-full mt-5 md:mt-[30px];
+}
+
+/* --------------------------------------------
+Food List
+-----------------------------------------------*/
+
+.food-list{
+  @apply pt-5 pb-0 lg:pt-14 lg:pb-10;
+}
+.food-list .splide li{
+  @apply px-0 sm:px-[15px];
+}
+.food-list .splide .slide-img{
+  @apply inline-block w-full h-0 pt-[100%] overflow-hidden relative rounded-2xl my-5 shadow-[0px_0px_16px_rgba(1,1,1,0.18)] transition-all duration-200 ease-in-out;
+}
+.food-list .splide li:not(.is-active) .slide-img{
+  @apply transform scale-90 sm:scale-100 opacity-50 sm:opacity-100 bg-white;
+}
+.food-list .splide .slide-img img{
+  @apply w-full h-full object-contain object-center absolute top-0 left-0 transition-all duration-300 scale-100 hover:scale-105 px-5 pb-10;
+}
+.food-list .splide h4{
+  @apply absolute bottom-0 left-0 w-full bg-blue text-white text-center font-raleway font-semibold text-sm sm:text-base uppercase py-3 transition-all duration-300;
+}
+
+.splide .splide__arrows .splide__arrow{
+  @apply w-10 h-10 bg-red lg:bg-[#FBE8E6] lg:hover:bg-dark_blue opacity-100; 
+}
+.splide .splide__arrows .splide__arrow.splide__arrow--next{
+  @apply right-8 sm:right-1 md:-right-0.5 2xl:-right-1;
+}
+.splide .splide__arrows .splide__arrow.splide__arrow--prev{
+  @apply left-8 sm:left-1 md:-left-0.5 2xl:-left-1;
+}
+.splide .splide__arrows .splide__arrow svg{
+  @apply fill-white lg:fill-light_black;
+}
+.splide .splide__arrows .splide__arrow:hover svg{
+  @apply lg:fill-white;
+}
+
+/* --------------------------------------------
+App Promotion
+-----------------------------------------------*/
+.app_promotion-sec{
+  @apply bg-black text-white relative overflow-hidden z-0 pb-3 lg:pb-0;
+}
+.app-bg{
+  @apply absolute top-0 left-0 w-full h-full object-cover object-center opacity-30 -z-[1]
+}
+.app_promotion-content{
+  @apply relative z-0 text-sm lg:pr-5 lg:text-lg leading-6 lg:leading-7 text-center lg:text-left font-semibold py-4 max-w-full lg:max-w-[calc(100%_-_288px)];
+}
+.app_promotion-content h3{
+  @apply mb-2 lg:mb-4 text-2xl lg:text-5xl leading-9;
+}
+.app_promotion-content p{
+  @apply mb-3 lg:mb-4;
+}
+.app_promotion-content .small-text{
+  @apply text-xs md:text-base;
+}
+.app_promotion-content h5{
+  @apply font-bold text-xl leading-7;
+}
+
+.get-app-link{
+  @apply flex mx-auto w-full mt-8;
+}
+.get-app-link ul{
+  @apply flex flex-row w-full justify-center lg:justify-start
+}
+.get-app-link li{
+  @apply mr-[18px] last:mr-0 lg:mr-5 last:lg:mr-0 w-[calc(100%_-_9px)] sm:w-auto;
+}
+
+.ios-btn{
+  @apply rounded-[5px] border border-red bg-red py-2.5 px-2 sm:px-4 inline-flex items-center justify-center text-white text-base font-bold uppercase w-full sm:min-w-[170px] lg:min-w-[180px] transition-all duration-300 transform scale-100 hover:scale-105;
+}
+.ios-btn svg{
+  @apply w-[22px] lg:w-7 h-[22px] lg:h-7 mr-2.5
+}
+
+.android-btn{
+  @apply rounded-[5px] border border-white bg-white py-2.5 px-2 sm:px-4 inline-flex items-center justify-center text-blue text-base font-bold uppercase w-full sm:min-w-[170px] lg:min-w-[180px] transition-all duration-300 transform scale-100 hover:scale-105;
+}
+.android-btn svg{
+  @apply w-[22px] lg:w-7 h-[22px] lg:h-7 mr-2.5
+}
+
+
+.app_promotion-sec .phone-img{
+  @apply hidden lg:flex flex-col pt-5;
+}
+.app_promotion-sec .phone-img img{
+  @apply mt-auto align-bottom
+}
+
+
+/* --------------------------------------------
+FAQ's
+-----------------------------------------------*/
+
+.faq-sec{
+  @apply py-5 lg:py-[60px]
+}
+.faq-sec .container{
+  @apply max-w-[1240px]
+}
+.faq-blocks{
+  @apply px-4 lg:px-[50px] py-2 lg:py-[60px] flex flex-wrap items-start max-w-[1200px] mx-auto shadow-[3.5px_6.06px_10px_rgba(1,1,1,0.18)] lg:shadow-[3.5px_6.06px_21px_rgba(1,1,1,0.18)] rounded-[5px] lg:rounded-[30px] justify-between mt-6 lg:mt-11
+}
+.faq-blocks .left-faq{
+  @apply w-full lg:w-[calc(50%_-_30px)]
+}
+.faq-blocks .right-faq{
+  @apply w-full lg:w-[calc(50%_-_30px)]
+}
+.faq-blocks .faq-block{
+  @apply w-full border-b border-b-blue border-opacity-10;
+}
+.faq-blocks .faq-block:last-child{
+  @apply border-b-0
+}
+.faq-blocks .faq-block h4{
+  @apply text-base lg:text-xl text-light_black mt-0 font-raleway font-medium lg:font-semibold py-4 pr-10 relative leading-6 lg:leading-7 cursor-pointer select-none
+}
+.faq-blocks .faq-block h4:after{
+  @apply content-[''] absolute top-4 right-0 w-5 lg:w-7 h-5 lg:h-7 bg-plus bg-contain;
+}
+.faq-blocks .faq-block.opened h4:after{
+  @apply bg-minus;
+}
+.faq-blocks .faq-block .faq-content{
+  @apply max-h-0 overflow-hidden;
+}
+.faq-blocks .faq-block.opened .faq-content{
+  @apply pb-5 max-h-96;
+}
+
+/* --------------------------------------------
+Nearby Sec
+-----------------------------------------------*/
+.nearby-sec{
+  @apply pt-5 pb-5 lg:pt-14 lg:pb-10;
+}
+.nearby-sec .splide li{
+  @apply px-[15px];
+}
+.nearby-sec .near-location{
+  @apply p-4 lg:p-6 2xl:p-8 h-[calc(100%_-_2.5rem)] rounded-2xl shadow-[0px_0px_10px_rgba(1,1,1,0.18)] lg:shadow-[3.5px_6.06px_21px_rgba(1,1,1,0.18)] my-5 transition-all duration-300 transform scale-100 hover:scale-105 z-0 relative;
+}
+.nearby-sec .near-location h4{
+  @apply font-raleway font-semibold text-base md:text-[17px] lg:text-xl mb-4;
+}
+.nearby-sec .near-location h4 a{
+  @apply hover:text-blue
+}
+.near-location .store-link{
+  @apply justify-start mt-4;
+}
+.near-location .store-link .direction{
+  @apply py-2 md:py-3 w-[calc(50%_-_5px)] min-w-0 2xl:min-w-[200px];
+}
+.near-location .store-link .view-details{
+  @apply py-2 md:py-3 w-[calc(50%_-_5px)] min-w-0 2xl:min-w-[200px] bg-blue hover:bg-dark_blue text-white rounded ml-2.5 transition-all duration-300;
+}
+
+.nearby-sec .splide__track{
+  @apply xl:overflow-visible
+}
+.nearby-sec .splide__pagination{
+  @apply relative bottom-0 lg:mt-5;
+}
+.nearby-sec .splide__pagination li{
+  @apply p-0
+}
+.nearby-sec .splide__pagination li .splide__pagination__page{
+  @apply w-2 lg:w-3 h-2 lg:h-3 bg-blue opacity-30;
+}
+.nearby-sec .splide__pagination li .splide__pagination__page.is-active{
+  @apply scale-100 opacity-100;
+}
+
+/* --------------------------------------------
+Social Links
+-----------------------------------------------*/
+.social-links{
+  @apply hidden lg:inline-flex flex-wrap items-center leading-none; 
+}
+.social-links li{
+  @apply mx-4;
+}
+.social-links a{
+  @apply inline-flex w-5 h-5 items-center justify-center align-middle transition-all duration-200 opacity-100 hover:opacity-90;
+}
+
+
+/* --------------------------------------------
+Newsletter
+-----------------------------------------------*/
+.newsletter{
+  @apply bg-[#E5E5E5]
+}
+.newsletter .newsletter-form h3{
+  @apply text-[28px] lg:text-3xl lg:mr-11 mb-3 lg:mb-0;
+}
+.newsletter .newsletter-form{
+  @apply pt-4 pb-5 lg:py-2.5 flex items-center flex-col lg:flex-row justify-center
+}
+.newsletter .newsletter-form .form-group{
+  @apply max-w-[660px] w-full relative
+}
+.newsletter .newsletter-form .input-box{
+  @apply bg-white w-full text-sm lg:text-xl text-black leading-6 lg:leading-8 placeholder:text-black placeholder:opacity-50 py-2 lg:py-3.5 pl-4 lg:pl-5 pr-12 lg:pr-16 outline-none;
+}
+.newsletter .newsletter-form .submit{
+  @apply absolute top-0.5 lg:top-[5px] right-0.5 lg:right-[5px] bg-red hover:bg-dark_blue text-white text-sm lg:text-xl font-semibold uppercase w-10 lg:w-[50px] h-9 lg:h-[50px] transition-all duration-300;
+}
+
+
+/* --------------------------------------------
+Footer
+-----------------------------------------------*/
+.site-footer{
+  @apply bg-footer_bg text-white py-5 lg:py-9 text-xs lg:text-sm leading-loose;
+}
+.site-footer a{
+  @apply transition-all duration-300 hover:underline
+}
+.signup-newsletter{
+  @apply bg-dark_black hover:bg-dark_blue hover:!no-underline py-2 px-4 uppercase font-semibold inline-block align-middle transition-all duration-300;
+}
+
+.site-footer .footer-links{
+  @apply flex flex-wrap flex-row lg:flex-col justify-center lg:justify-start mb-3 lg:mb-0
+}
+.site-footer .footer-links li{
+  @apply after:content-['|'] after:mx-2.5 last:after:content-none lg:after:content-none;
+}
+.footer-address{
+  @apply text-center max-w-md px-4 mx-auto lg:mx-0;
+}
+.footer-address p{
+  @apply leading-[22px] lg:leading-8 first:text-sm first:lg:text-base first:font-semibold
+}
+.site-footer .social-links a:hover{
+  @apply no-underline opacity-100
+}
+.social-links a:hover svg path {
+  @apply fill-red
+}
+
+@media screen and (min-width: 750px) and (max-width: 767px){
+  .box.store-info{
+    @apply w-[370px];
+  }
+  .box.store-timing{
+    @apply w-[calc(100%_-_370px)] mt-0;
+  }  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
