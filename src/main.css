@@ -382,13 +382,13 @@ Location information
   @apply font-semibold w-[115px] md:w-[135px];
 }
 .other-services .service-row .status{
-  @apply bg-green text-xs md:text-sm leading-6 md:leading-6 min-w-[80px] text-center px-1.5 text-white rounded tracking-widest ml-auto;
+  @apply bg-green text-xs md:text-sm leading-6 md:leading-6 min-w-[85px] text-center px-1.5 text-white rounded tracking-widest ml-auto;
 }
 .other-services .service-row .status.offline{
   @apply bg-blue
 }
 .other-services .service-row .avability{
-  @apply w-[60px] text-white text-center text-xs md:text-sm rounded bg-blue leading-6 md:leading-6;
+  @apply w-[60px] text-white text-center text-xs md:text-sm rounded bg-green leading-6 md:leading-6;
 }
 .other-services .service-row .avability.no{
   @apply bg-red
@@ -708,7 +708,7 @@ Footer
 }
 
 .site-footer .footer-links{
-  @apply flex flex-wrap flex-row lg:flex-col justify-center lg:justify-start mb-3 lg:mb-0
+  @apply flex flex-wrap flex-row lg:flex-col justify-center lg:justify-start mb-3 lg:mb-0 uppercase leading-[27px]
 }
 .site-footer .footer-links li{
   @apply after:content-['|'] after:mx-2.5 last:after:content-none lg:after:content-none;
@@ -734,17 +734,3 @@ Footer
     @apply w-[calc(100%_-_370px)] mt-0;
   }  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
