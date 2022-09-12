@@ -23,7 +23,8 @@ module.exports = {
           'facebook': '#45619d',
           'light': '#fafafa',
           'green': '#348B31',
-          'dark_blue': "#09093e"
+          'dark_blue': "#09093e",
+          'dark_red': "#bd1508"
       },
 
       fontFamily: {

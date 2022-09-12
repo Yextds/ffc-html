@@ -216,7 +216,7 @@ Header
   @apply max-h-60;
 }
 .navigation .submenu a{
-  @apply w-full lg:hover:bg-dark_blue border-b border-b-[#d9d9d9] lg:border-b-0 w-full;
+  @apply w-full lg:hover:bg-[#060628] border-b border-b-[#d9d9d9] lg:border-b-0 w-full;
 }
 .navigation ul.main-nav .submenu a{
   @apply pl-10 lg:pl-5;
@@ -260,23 +260,23 @@ Header
 Breadcrumb
 -----------------------------------------------*/
 .breadcrumb ul{
-  @apply flex flex-wrap md:flex-row items-center leading-5 md:leading-9 text-[10px] md:text-sm pt-2 pb-2 md:py-0;
+  @apply flex flex-wrap md:flex-row items-center leading-5 md:leading-10 text-[10px] md:text-sm pt-2 pb-2 md:py-0;
 }
 .breadcrumb ul li{
   @apply align-middle text-red font-medium md:font-normal;
 }
 .breadcrumb ul li svg{
-  @apply w-3 md:w-4
+  @apply w-3 md:w-5
 }
 .breadcrumb ul li a{
-  @apply inline-flex items-center min-h-[20px] md:h-9 align-top text-light_black hover:text-red after:w-1 after:md:w-1.5 after:h-1 after:md:h-1.5 after:transform after:rotate-45 after:border-r after:border-t after:mx-1 after:md:mx-2.5 after:border-light_black transition-all duration-300; 
+  @apply inline-flex items-center min-h-[20px] md:h-10 align-top text-light_black hover:underline after:w-1 after:md:w-1.5 after:h-1 after:md:h-1.5 after:transform after:rotate-45 after:border-r after:border-t after:mx-1 after:md:mx-2.5 after:border-light_black transition-all duration-300; 
 }
 
 /* --------------------------------------------
 Hero Area
 -----------------------------------------------*/
 .hero{
-  @apply relative pt-4 md:pt-8 pb-[30px] md:pb-12 z-0 text-white text-sm lg:text-2xl font-semibold lg:font-normal after:absolute after:top-0 after:left-0 after:bottom-0 after:right-0 after:bg-black after:bg-opacity-50 after:-z-[1];
+  @apply relative pt-4 md:pt-8 pb-[34px] md:pb-12 z-0 text-white text-sm lg:text-2xl font-semibold lg:font-normal after:absolute after:top-0 after:left-0 after:bottom-0 after:right-0 after:bg-black after:bg-opacity-50 after:-z-[1];
 }
 .hero .hero-img{
   @apply absolute top-0 left-0 w-full h-full object-cover object-center -z-[1];
@@ -295,7 +295,7 @@ Hero Area
 Location information
 -----------------------------------------------*/
 .location-information{
-  @apply pt-6 lg:pt-8 pb-5 lg:pb-[30px];
+  @apply pt-6 lg:pt-9 pb-5 lg:pb-[34px];
 }
 .store-time-status{
   @apply text-blue;
@@ -347,7 +347,7 @@ Location information
   @apply relative pl-5 md:pl-9 mb-6 inline-block w-full align-top;
 }
 .store-phone a{
-  @apply  transition-all duration-300 hover:text-blue
+  @apply  transition-all duration-300 hover:underline
 }
 .store-phone svg{
   @apply absolute top-0 left-0 w-3.5 md:w-auto;
@@ -360,7 +360,7 @@ Location information
   @apply inline-flex align-top justify-center items-center py-2 px-2 font-semibold;
 }
 .store-link .direction{
-  @apply bg-red hover:bg-dark_blue text-white rounded w-[calc(50%_-_5px)] xl:w-[170px] transition-all duration-300;
+  @apply bg-red hover:bg-dark_red text-white rounded w-[calc(50%_-_5px)] xl:w-[170px] transition-all duration-300;
 }
 .store-link .call-store{
   @apply w-[calc(50%_-_5px)] xl:w-[188px] bg-blue hover:bg-dark_blue text-white rounded ml-2.5 md:ml-0 transition-all duration-300;
@@ -690,7 +690,7 @@ Newsletter
   @apply bg-white w-full text-sm lg:text-xl text-black leading-6 lg:leading-8 placeholder:text-black placeholder:opacity-50 py-2 lg:py-3.5 pl-4 lg:pl-5 pr-12 lg:pr-16 outline-none;
 }
 .newsletter .newsletter-form .submit{
-  @apply absolute top-0.5 lg:top-[5px] right-0.5 lg:right-[5px] bg-red hover:bg-dark_blue text-white text-sm lg:text-xl font-semibold uppercase w-10 lg:w-[50px] h-9 lg:h-[50px] transition-all duration-300;
+  @apply absolute top-0.5 lg:top-[5px] right-0.5 lg:right-[5px] bg-red hover:bg-dark_red text-white text-sm lg:text-xl font-semibold uppercase w-10 lg:w-[50px] h-9 lg:h-[50px] transition-all duration-300;
 }
 
 
@@ -698,13 +698,13 @@ Newsletter
 Footer
 -----------------------------------------------*/
 .site-footer{
-  @apply bg-footer_bg text-white py-5 lg:py-9 text-xs lg:text-sm leading-loose;
+  @apply bg-footer_bg text-white py-5 lg:py-9 lg:pb-5 text-xs lg:text-sm leading-loose;
 }
 .site-footer a{
   @apply transition-all duration-300 hover:underline
 }
 .signup-newsletter{
-  @apply bg-dark_black hover:bg-dark_blue hover:!no-underline py-2 px-4 uppercase font-semibold inline-block align-middle transition-all duration-300;
+  @apply bg-dark_black hover:bg-dark_blue hover:!no-underline py-3 px-4 uppercase font-semibold inline-block align-middle transition-all duration-300;
 }
 
 .site-footer .footer-links{
@@ -717,7 +717,7 @@ Footer
   @apply text-center max-w-md px-4 mx-auto lg:mx-0;
 }
 .footer-address p{
-  @apply leading-[22px] lg:leading-8 first:text-sm first:lg:text-base first:font-semibold
+  @apply leading-[22px] lg:leading-[27px] first:text-sm first:lg:text-base first:font-semibold
 }
 .site-footer .social-links a:hover{
   @apply no-underline opacity-100
