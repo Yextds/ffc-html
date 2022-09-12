@@ -720,11 +720,9 @@ Footer
   @apply leading-[22px] lg:leading-[27px] first:text-sm first:lg:text-base first:font-semibold
 }
 .site-footer .social-links a:hover{
-  @apply no-underline opacity-100
+  @apply no-underline opacity-90
 }
-.social-links a:hover svg path {
-  @apply fill-red
-}
+
 
 @media screen and (min-width: 750px) and (max-width: 767px){
   .box.store-info{
