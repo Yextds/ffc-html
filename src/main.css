@@ -458,9 +458,7 @@ Location information
 .box.store-social .social-links li a svg{
   @apply h-5
 }
-.map-info img{
-  @apply absolute top-0 left-0 w-full h-full object-cover object-center;
-}
+
 
 /* --------------------------------------------
 About
