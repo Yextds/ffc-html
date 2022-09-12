@@ -328,7 +328,7 @@ Location information
   @apply bg-black bg-opacity-[0.02] p-[15px] md:p-4 h-full;
 }
 .box.map-info .inner-box{
-  @apply h-96 xl:h-full p-0 relative overflow-hidden;
+  @apply h-[230px] md:h-96 xl:h-full p-0 relative overflow-hidden;
 }
 .box h4{
   @apply border-b-2 border-b-red pb-0 md:pb-2 mb-[15px] md:mb-5;
