@@ -328,7 +328,7 @@ Location information
   @apply bg-black bg-opacity-[0.02] p-[15px] md:p-4 h-full;
 }
 .box.map-info .inner-box{
-  @apply pt-[64%] md:pt-0 h-0 md:h-96 xl:h-full p-0 relative overflow-hidden;
+  @apply h-96 xl:h-full p-0 relative overflow-hidden;
 }
 .box h4{
   @apply border-b-2 border-b-red pb-0 md:pb-2 mb-[15px] md:mb-5;
@@ -497,7 +497,7 @@ Food List
 }
 
 .splide .splide__arrows .splide__arrow{
-  @apply w-10 h-10 bg-red lg:bg-[#FBE8E6] lg:hover:bg-dark_blue opacity-100; 
+  @apply w-10 h-10 transition-all bg-red lg:bg-[#FBE8E6] lg:hover:bg-red opacity-100; 
 }
 .splide .splide__arrows .splide__arrow.splide__arrow--next{
   @apply right-8 sm:right-1 md:-right-0.5 2xl:-right-1;
@@ -665,7 +665,7 @@ Social Links
   @apply mx-4;
 }
 .social-links a{
-  @apply inline-flex w-5 h-5 items-center justify-center align-middle transition-all duration-200 opacity-100 hover:opacity-90;
+  @apply inline-flex w-5 h-5 items-center justify-center align-middle transition-all duration-200 opacity-100 transform scale-100 hover:scale-110;
 }
 
 
@@ -718,7 +718,7 @@ Footer
   @apply leading-[22px] lg:leading-[27px] first:text-sm first:lg:text-base first:font-semibold
 }
 .site-footer .social-links a:hover{
-  @apply no-underline opacity-90
+  @apply no-underline
 }
 
 
