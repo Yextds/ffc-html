@@ -179,12 +179,14 @@ Header
   @apply hidden lg:flex flex-row items-center pb-0.5;
 }
 .app-link a{
-  @apply ml-6;
+  @apply ml-6 flex items-center flex-row justify-center bg-black rounded-md border border-[#A6A6A6] w-[135px] h-10 text-[9px] text-white leading-none;
 }
 .app-link a img{
-  @apply h-10;
+  @apply w-[21px] mr-2 min-w-[21px]
 }
-
+.app-link a b{
+  @apply font-semibold block text-sm
+}
 .navigation{
   @apply bg-blue text-white;
 }
@@ -702,7 +704,7 @@ Footer
   @apply transition-all duration-300 hover:underline
 }
 .signup-newsletter{
-  @apply bg-dark_black hover:bg-dark_blue hover:!no-underline py-3 px-4 uppercase font-semibold inline-block align-middle transition-all duration-300;
+  @apply bg-dark_black hover:bg-red hover:!no-underline py-3 px-4 uppercase font-semibold inline-block align-middle transition-all duration-300;
 }
 
 .site-footer .footer-links{
@@ -730,3 +732,22 @@ Footer
     @apply w-[calc(100%_-_370px)] mt-0;
   }  
 }
+@media screen and (max-width: 374px){
+  .logo{
+    @apply w-[220px]
+  }
+  .hours .time-row{
+    @apply pl-8
+  }
+  .hours .time-row .store-time{
+    @apply w-20;
+  }
+  .hours .time-row .delivery-time{
+    @apply w-20;
+  }
+  
+}
+
+
+
+
