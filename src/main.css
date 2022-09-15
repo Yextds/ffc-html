@@ -499,7 +499,7 @@ Food List
 }
 
 .splide .splide__arrows .splide__arrow{
-  @apply w-10 h-10 transition-all bg-red lg:bg-[#FBE8E6] lg:hover:bg-red opacity-100; 
+  @apply w-10 h-10 transition-all bg-red disabled:bg-[#FBE8E6] lg:bg-[#FBE8E6] lg:hover:bg-red hover:opacity-100 opacity-100 disabled:opacity-70 disabled:hover:bg-[#FBE8E6]; 
 }
 .splide .splide__arrows .splide__arrow.splide__arrow--next{
   @apply right-8 sm:right-1 md:-right-0.5 2xl:-right-1;
@@ -509,6 +509,12 @@ Food List
 }
 .splide .splide__arrows .splide__arrow svg{
   @apply fill-white lg:fill-light_black;
+}
+.splide .splide__arrows .splide__arrow:disabled:hover svg{
+  @apply lg:fill-light_black;
+}
+.splide .splide__arrows .splide__arrow:disabled svg{
+  @apply fill-light_black
 }
 .splide .splide__arrows .splide__arrow:hover svg{
   @apply lg:fill-white;
@@ -617,13 +623,13 @@ FAQ's
 Nearby Sec
 -----------------------------------------------*/
 .nearby-sec{
-  @apply pt-5 pb-5 lg:pt-14 lg:pb-10;
+  @apply pt-5 pb-5 lg:pt-14 lg:pb-10 overflow-hidden;
 }
 .nearby-sec .splide li{
-  @apply px-[15px];
+  @apply px-[15px] sm:px-11 xl:px-[15px];
 }
 .nearby-sec .near-location{
-  @apply p-4 lg:p-6 2xl:p-8 h-[calc(100%_-_2.5rem)] rounded-2xl shadow-[0px_0px_10px_rgba(1,1,1,0.18)] lg:shadow-[3.5px_6.06px_21px_rgba(1,1,1,0.18)] my-5 transition-all duration-300 transform scale-100 hover:scale-105 z-0 relative;
+  @apply p-4 lg:p-6 2xl:p-8 h-[calc(100%_-_2.5rem)] rounded-2xl shadow-[0px_0px_10px_rgba(1,1,1,0.18)] xl:shadow-[3.5px_6.06px_21px_rgba(1,1,1,0.18)] my-5 transition-all duration-300 transform scale-100 hover:scale-105 z-0 relative;
 }
 .nearby-sec .near-location h4{
   @apply font-raleway font-semibold text-base md:text-[17px] lg:text-xl mb-4;
@@ -638,9 +644,12 @@ Nearby Sec
   @apply py-2 md:py-3 w-[calc(50%_-_5px)] min-w-0 2xl:min-w-[200px];
 }
 .near-location .store-link .view-details{
-  @apply py-2 md:py-3 w-[calc(50%_-_5px)] min-w-0 2xl:min-w-[200px] bg-blue hover:bg-dark_blue text-white rounded ml-2.5 transition-all duration-300;
+  @apply py-2 leading-6 md:py-3 w-[calc(50%_-_5px)] min-w-0 2xl:min-w-[200px] bg-blue hover:bg-dark_blue text-white rounded ml-2.5 transition-all duration-300;
 }
 
+.nearby-sec #splide-nearby{
+  @apply sm:max-w-xl mx-auto xl:max-w-full
+}
 .nearby-sec .splide__track{
   @apply xl:overflow-visible
 }
@@ -655,6 +664,12 @@ Nearby Sec
 }
 .nearby-sec .splide__pagination li .splide__pagination__page.is-active{
   @apply scale-100 opacity-100;
+}
+.nearby-sec .splide .splide__arrows .splide__arrow.splide__arrow--prev{
+  @apply xl:hidden  -left-2.5 sm:left-0 -mt-[7.5px] lg:-mt-[14px] xl:mt-0;
+}
+.nearby-sec .splide .splide__arrows .splide__arrow.splide__arrow--next{
+  @apply xl:hidden -right-2.5 sm:right-0 -mt-[7.5px] lg:-mt-[14px] xl:mt-0;
 }
 
 /* --------------------------------------------
@@ -704,7 +719,7 @@ Footer
   @apply transition-all duration-300 hover:underline
 }
 .signup-newsletter{
-  @apply bg-dark_black hover:bg-red hover:!no-underline py-3 px-4 uppercase font-semibold inline-block align-middle transition-all duration-300;
+  @apply bg-dark_black relative top-0 hover:-top-1 hover:!no-underline py-[7px] lg:py-3 px-4 uppercase font-semibold inline-block align-middle transition-all duration-300;
 }
 
 .site-footer .footer-links{
@@ -734,20 +749,53 @@ Footer
 }
 @media screen and (max-width: 374px){
   .logo{
-    @apply w-[220px]
+    @apply w-[190px]
   }
   .hours .time-row{
     @apply pl-8
   }
+  .hours .time-row .day{
+    @apply w-[calc(100%_-_10rem)]
+  }
   .hours .time-row .store-time{
-    @apply w-20;
+    @apply w-[4.5rem];
   }
   .hours .time-row .delivery-time{
-    @apply w-20;
+    @apply w-[4.5rem];
+  }
+
+  .store-link .direction{
+    @apply w-auto
+  }
+  .store-link .call-store{
+    @apply w-auto
+  }
+  .other-services .service-row .avability{
+    @apply mr-1
+  }
+  .hours .time-row{
+    @apply text-xs leading-9
+  }
+
+  .box.store-social h4{
+    @apply text-lg
+  }
+  .box.store-social .social-links li{
+    @apply ml-1
+  }
+  .box.store-social .social-links li a svg{
+    @apply h-4
+  }
+
+  .android-btn, .ios-btn{
+    @apply text-sm
+  }
+
+  .near-location .store-link .direction{
+    @apply w-full
+  }
+  .near-location .store-link .view-details{
+    @apply w-full ml-0 mt-2.5
   }
   
 }
-
-
-
-

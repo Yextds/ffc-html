@@ -1,116 +1,172 @@
 ---
 {
-    "urlFormat": "index.html"
+"stream": {
+"$id": "location12_New3",
+"source": "knowledgeGraph",
+"destination": "pages",
+"filter" : {
+"entityTypes": [
+"location"
+],
+"savedFilterIds":[
+"1193103414"
+]
+},
+"fields": [
+"id",
+"uid",
+"meta",
+"name",
+"address",
+"mainPhone",
+"hours",
+"description",
+"slug",
+"photoGallery",
+"geocodedCoordinate",
+"c_primaryCTA",
+"c_deliveryService1",
+"c_clickAndCollect1",
+"deliveryHours",
+"c_title1",
+"c_heading1",
+"c_heading2",
+"c_heading3",
+"c_heading4",
+"c_data",
+"neighborhood",
+"c_fch1",
+"c_fch2",
+"c_fch3",
+"c_fch4",
+"c_fch5",
+"c_fch6",
+"c_fch7"
+
+
+],
+"localization": {
+"locales": ["en"]
+}
+},
+"urlFormat": "{{slug}}.html"
 }
 ---
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        {{>head }}
-        <title>Favorite Chicken & Ribs Kilburn</title>
-    </head>
-    <body id="body">
-        {{>header}}
-        {{>breadcrumb}}
-        {{>hero}}
-        {{>location_information}}
-        {{>about}}
-        {{>food_list}}
-        {{>favorite_food}}
-        {{>app_promotion}}
-        {{>faq}}
-        {{>nearby}}
-        {{>footer}}
-        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
-        <script>
-            function myFunction() {
-                document.getElementById("body").classList.toggle("menu-opened");
-            }
-            document.getElementById("menu-btn").onclick = myFunction;
-            var ourFoodSplide = new Splide('#food-list', {
-                perPage: 4,
-                perMove: 1,
-                pagination: false,
-                lazyLoad: 'nearby',
-                type: 'loop',
-                breakpoints: {
-                    1279: {
-                        perPage: 3,
-                    },
-                    767: {
-                        perPage: 2,
-                    },
-                    575: {
-                        perPage: 1,
-                        focus: 'center',
-                        padding: '45px',
-                    }
-                },
-            });
-            ourFoodSplide.mount();
-            
-            var favoriteFoodSplide = new Splide('#favorite-food', {
-                perPage: 4,
-                perMove: 1,
-                pagination: false,
-                lazyLoad: 'nearby',
-                type: 'loop',
-                breakpoints: {
-                    1279: {
-                        perPage: 3,
-                    },
-                    767: {
-                        perPage: 2,
-                    },
-                    575: {
-                        perPage: 1,
-                        focus: 'center',
-                        padding: '45px',
-                    }
-                },
-            });
-            favoriteFoodSplide.mount();
-            
-            var splide2 = new Splide('#splide-nearby', {
-                perPage: 3,
-                perMove: 1,
-                arrows: false,
-                drag: false,
-                pagination: false,
-                lazyLoad: 'nearby',
-                breakpoints: {
-                    1279: {
-                        perPage: 2,
-                        drag: true,
-                        pagination: true,
-                    },
-                    575: {
-                        perPage: 1,
-                    },
-                },
-            });
-            splide2.mount();
-            
-            
-            var acc = document.getElementsByClassName("faq-block");
-            var i;
-            for (i = 0; i < acc.length; i++) {
-                const faqContent = acc[i];	
-                const faqTitle = acc[i].querySelector(".faq-title");
-                faqTitle.addEventListener("click", function() {		
+
+<head>
+  {{>head }}
+  <title>{{name}} - {{neighborhood}}</title>
+
+</head>
+
+<body id="body">
+  {{>header}}
+  {{>breadcrumb}}
+  {{>hero}}
+  {{>location_information}}
+  {{>about}}
+  {{>food_list}}
+  {{>favorite_food}}
+  {{>app_promotion}}
+  {{>faq}}
+  {{>nearby}}
+
+  {{>footer}}
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+  <script>
+    document.getElementById("menu-btn").onclick = function () { myFunction() };
+
+    function myFunction() {
+      document.getElementById("body").classList.toggle("menu-opened");
+    }
+
+
+    var ourFoodSplide = new Splide('#food-list', {
+      perPage: 4,
+      perMove: 1,
+      pagination: false,
+      lazyLoad: 'nearby',
+      breakpoints: {
+        1279: {
+          perPage: 3,
+        },
+        767: {
+          perPage: 2,
+        },
+        575: {
+          perPage: 1,
+          focus: 'center',
+          padding: '45px',
+        }
+      },
+    });
+    ourFoodSplide.mount();
+
+    var favoriteFoodSplide = new Splide('#favorite-food', {
+      perPage: 4,
+      perMove: 1,
+      pagination: false,
+      lazyLoad: 'nearby',
+      breakpoints: {
+        1279: {
+          perPage: 3,
+        },
+        767: {
+          perPage: 2,
+        },
+        575: {
+          perPage: 1,
+          focus: 'center',
+          padding: '45px',
+        }
+      },
+    });
+    favoriteFoodSplide.mount();
+
+    var splide2 = new Splide('#splide-nearby', {
+      perPage: 3,
+      perMove: 1,
+      arrows: true,
+      drag: false,
+      pagination: false,
+      lazyLoad: 'nearby',
+      breakpoints: {
+        1279: {
+          perPage: 1,
+          pagination: true,
+        },
+      },
+    });
+    splide2.mount();
+
+
+var acc = document.getElementsByClassName("faq-block");
+	var i;
+	for (i = 0; i < acc.length; i++) {
+	  const faqContent = acc[i];	
+	  const faqTitle = acc[i].querySelector(".faq-title");
+	  faqTitle.addEventListener("click", function() {		
 					
-                    let parent = this.parentNode;
-                    if(parent.classList.contains("opened")){
-                        faqContent.classList.remove("opened");
-                        }else{
-                        for (s = 0; s < acc.length; s++) { 			
-                            acc[s].classList.remove("opened");			
-                        }
-                        faqContent.classList.add("opened");
-                    }
-                    
-                });
-            }
-        </script>
-    </body>
+		let parent = this.parentNode;
+		if(parent.classList.contains("opened")){
+			faqContent.classList.remove("opened");
+		}else{
+			for (s = 0; s < acc.length; s++) { 			
+				acc[s].classList.remove("opened");			
+			}
+			faqContent.classList.add("opened");
+		}
+		
+	  });
+	}
+
+
+  </script>
+
+
+</body>
+
 </html>
