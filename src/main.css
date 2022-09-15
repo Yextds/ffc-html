@@ -603,6 +603,10 @@ FAQ's
 .faq-blocks .faq-block:last-child{
   @apply border-b-0
 }
+.faq-blocks .left-faq .faq-block:last-child{
+  @apply border-b lg:border-b-0
+}
+
 .faq-blocks .faq-block h4{
   @apply text-base lg:text-xl text-light_black mt-0 font-raleway font-medium lg:font-semibold py-4 pr-10 relative leading-6 lg:leading-7 cursor-pointer select-none
 }
