@@ -8,51 +8,8 @@ Default
 
 @font-face {
   font-family: 'Raleway';
-  src: url('fonts/Raleway-Thin.eot');
-  src: url('fonts/Raleway-Thin.eot?#iefix') format('embedded-opentype'),
-      url('fonts/Raleway-Thin.woff2') format('woff2'),
-      url('fonts/Raleway-Thin.woff') format('woff'),
-      url('fonts/Raleway-Thin.ttf') format('truetype'),
-      url('fonts/Raleway-Thin.svg#Raleway-Thin') format('svg');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Raleway';
-  src: url('fonts/Raleway-ExtraLight.eot');
-  src: url('fonts/Raleway-ExtraLight.eot?#iefix') format('embedded-opentype'),
-      url('fonts/Raleway-ExtraLight.woff2') format('woff2'),
-      url('fonts/Raleway-ExtraLight.woff') format('woff'),
-      url('fonts/Raleway-ExtraLight.ttf') format('truetype'),
-      url('fonts/Raleway-ExtraLight.svg#Raleway-ExtraLight') format('svg');
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Raleway';
-  src: url('fonts/Raleway-Black.eot');
-  src: url('fonts/Raleway-Black.eot?#iefix') format('embedded-opentype'),
-      url('fonts/Raleway-Black.woff2') format('woff2'),
-      url('fonts/Raleway-Black.woff') format('woff'),
-      url('fonts/Raleway-Black.ttf') format('truetype'),
-      url('fonts/Raleway-Black.svg#Raleway-Black') format('svg');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Raleway';
-  src: url('fonts/Raleway-Bold.eot');
-  src: url('fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
-      url('fonts/Raleway-Bold.woff2') format('woff2'),
-      url('fonts/Raleway-Bold.woff') format('woff'),
-      url('fonts/Raleway-Bold.ttf') format('truetype'),
-      url('fonts/Raleway-Bold.svg#Raleway-Bold') format('svg');
+  src: url('fonts/Raleway-Bold.woff2') format('woff2'),
+      url('fonts/Raleway-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -60,25 +17,35 @@ Default
 
 @font-face {
   font-family: 'Raleway';
-  src: url('fonts/Raleway-ExtraBold.eot');
-  src: url('fonts/Raleway-ExtraBold.eot?#iefix') format('embedded-opentype'),
-      url('fonts/Raleway-ExtraBold.woff2') format('woff2'),
-      url('fonts/Raleway-ExtraBold.woff') format('woff'),
-      url('fonts/Raleway-ExtraBold.ttf') format('truetype'),
-      url('fonts/Raleway-ExtraBold.svg#Raleway-ExtraBold') format('svg');
-  font-weight: 800;
+  src: url('fonts/Raleway-Thin.woff2') format('woff2'),
+      url('fonts/Raleway-Thin.woff') format('woff');
+  font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url('fonts/Raleway-Light.eot');
-  src: url('fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
-      url('fonts/Raleway-Light.woff2') format('woff2'),
-      url('fonts/Raleway-Light.woff') format('woff'),
-      url('fonts/Raleway-Light.ttf') format('truetype'),
-      url('fonts/Raleway-Light.svg#Raleway-Light') format('svg');
+  src: url('fonts/Raleway-Black.woff2') format('woff2'),
+      url('fonts/Raleway-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-ExtraBold.woff2') format('woff2'),
+      url('fonts/Raleway-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-Light.woff2') format('woff2'),
+      url('fonts/Raleway-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -86,12 +53,17 @@ Default
 
 @font-face {
   font-family: 'Raleway';
-  src: url('fonts/Raleway-Medium.eot');
-  src: url('fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
-      url('fonts/Raleway-Medium.woff2') format('woff2'),
-      url('fonts/Raleway-Medium.woff') format('woff'),
-      url('fonts/Raleway-Medium.ttf') format('truetype'),
-      url('fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
+  src: url('fonts/Raleway-ExtraLight.woff2') format('woff2'),
+      url('fonts/Raleway-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-Medium.woff2') format('woff2'),
+      url('fonts/Raleway-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -99,12 +71,8 @@ Default
 
 @font-face {
   font-family: 'Raleway';
-  src: url('fonts/Raleway-Regular.eot');
-  src: url('fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
-      url('fonts/Raleway-Regular.woff2') format('woff2'),
-      url('fonts/Raleway-Regular.woff') format('woff'),
-      url('fonts/Raleway-Regular.ttf') format('truetype'),
-      url('fonts/Raleway-Regular.svg#Raleway-Regular') format('svg');
+  src: url('fonts/Raleway-Regular.woff2') format('woff2'),
+      url('fonts/Raleway-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -112,12 +80,8 @@ Default
 
 @font-face {
   font-family: 'Raleway';
-  src: url('fonts/Raleway-SemiBold.eot');
-  src: url('fonts/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
-      url('fonts/Raleway-SemiBold.woff2') format('woff2'),
-      url('fonts/Raleway-SemiBold.woff') format('woff'),
-      url('fonts/Raleway-SemiBold.ttf') format('truetype'),
-      url('fonts/Raleway-SemiBold.svg#Raleway-SemiBold') format('svg');
+  src: url('fonts/Raleway-SemiBold.woff2') format('woff2'),
+      url('fonts/Raleway-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -125,17 +89,12 @@ Default
 
 @font-face {
   font-family: 'Bebas Neue';
-  src: url('fonts/BebasNeue-Regular.eot');
-  src: url('fonts/BebasNeue-Regular.eot?#iefix') format('embedded-opentype'),
-      url('fonts/BebasNeue-Regular.woff2') format('woff2'),
-      url('fonts/BebasNeue-Regular.woff') format('woff'),
-      url('fonts/BebasNeue-Regular.ttf') format('truetype'),
-      url('fonts/BebasNeue-Regular.svg#BebasNeue-Regular') format('svg');
+  src: url('fonts/BebasNeue-Regular.woff2') format('woff2'),
+      url('fonts/BebasNeue-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-
 
 body{
   @apply font-normal text-light_black font-raleway text-sm lg:text-base;
@@ -170,13 +129,19 @@ h4, .h4{
 Header
 -----------------------------------------------*/
 .header-top{
-  @apply lg:pt-2.5 lg:pb-2 shadow-[0px_0px_3px_rgba(0,0,0,0.16)]
+  @apply lg:pt-2.5 lg:pb-[7px] shadow-[0px_0px_3px_rgba(0,0,0,0.16)] relative z-0
+}
+.header-top:before{
+  @apply content-none lg:content-[''] absolute bottom-1.5 lg:bottom-[15px] left-0 right-0 bg-red h-[18px] lg:h-[33px] -z-[1]
 }
 .logo{
-  @apply w-[250px] lg:w-auto pt-1 lg:pt-0
+  @apply w-[250px] lg:w-[456px] pt-1 lg:pt-0 lg:-ml-[7px]
+}
+.logo img{
+  @apply w-full
 }
 .app-link{
-  @apply hidden lg:flex flex-row items-center pb-0.5;
+  @apply hidden lg:flex flex-row items-center pb-0.5 mb-[46px];
 }
 .app-link a{
   @apply ml-6 flex items-center flex-row justify-center bg-black rounded-md border border-[#A6A6A6] w-[135px] h-10 text-[9px] text-white leading-none;
@@ -278,10 +243,10 @@ Breadcrumb
 Hero Area
 -----------------------------------------------*/
 .hero{
-  @apply relative pt-4 md:pt-8 pb-[34px] md:pb-12 z-0 text-white text-sm lg:text-2xl font-semibold lg:font-normal after:absolute after:top-0 after:left-0 after:bottom-0 after:right-0 after:bg-black after:bg-opacity-50 after:-z-[1];
+  @apply relative pt-4 md:pt-8 pb-[34px] md:pb-12 z-0 text-white text-sm lg:text-2xl font-semibold lg:font-normal after:absolute after:top-0 after:left-0 after:bottom-0 after:right-0 after:bg-black after:bg-opacity-60 after:-z-[1];
 }
 .hero .hero-img{
-  @apply absolute top-0 left-0 w-full h-full object-cover object-center -z-[1];
+  @apply absolute top-0 left-0 w-full h-full object-cover object-left -z-[1];
 }
 .hero p{
   @apply my-2
@@ -365,7 +330,7 @@ Location information
   @apply bg-red hover:bg-dark_red text-white rounded w-[calc(50%_-_5px)] xl:w-[170px] transition-all duration-300;
 }
 .store-link .call-store{
-  @apply w-[calc(50%_-_5px)] xl:w-[188px] bg-blue hover:bg-dark_blue text-white rounded ml-2.5 md:ml-0 transition-all duration-300;
+  @apply w-[calc(50%_-_5px)] xl:w-[188px] bg-red hover:bg-dark_red text-white rounded ml-2.5 md:ml-0 transition-all duration-300;
 }
 .store-link a svg{
   @apply mr-1.5 w-4 md:w-auto fill-white;
@@ -405,19 +370,29 @@ Location information
   @apply mr-2.5
 }
 .available-option{
-  @apply text-left;
+  @apply text-left w-full;
 }
 .available-option h5{
   @apply font-semibold text-base md:text-base leading-7;
 }
 .available-option ul{
-  @apply flex flex-wrap justify-center lg:justify-end;
+  @apply flex flex-wrap;
 }
 .available-option ul li{
-  @apply mt-2.5 mr-2.5 last:mr-0;
+  @apply mt-2.5 mr-6 last:mr-0;
 }
 .available-option ul li img{
-  @apply w-10 lg:w-[50px] transition-all duration-200 transform scale-100 hover:scale-105
+  @apply w-10 lg:w-[66px] transition-all duration-200 transform scale-100 hover:scale-105
+}
+
+.available-option.order-direct{
+  @apply w-full flex mb-2.5
+}
+.available-option.order-direct ul{
+  @apply ml-12
+}
+.available-option.order-direct ul li{
+  @apply mt-0
 }
 
 .hours{
@@ -527,7 +502,7 @@ App Promotion
   @apply bg-black text-white relative overflow-hidden z-0 pb-3 lg:pb-0;
 }
 .app-bg{
-  @apply absolute top-0 left-0 w-full h-full object-cover object-center opacity-30 -z-[1]
+  @apply absolute top-0 left-0 w-full h-full object-cover object-left opacity-[0.35] -z-[1]
 }
 .app_promotion-content{
   @apply relative z-0 text-sm lg:pr-5 lg:text-lg leading-6 lg:leading-7 text-center lg:text-left font-semibold py-4 max-w-full lg:max-w-[calc(100%_-_288px)];
@@ -546,13 +521,16 @@ App Promotion
 }
 
 .get-app-link{
-  @apply flex mx-auto w-full mt-8;
+  @apply flex mx-auto w-full mt-[30px] lg:mt-[50px];
 }
 .get-app-link ul{
   @apply flex flex-row w-full justify-center lg:justify-start
 }
 .get-app-link li{
   @apply mr-[18px] last:mr-0 lg:mr-5 last:lg:mr-0 w-[calc(100%_-_9px)] sm:w-auto;
+}
+.get-app-link li a img{
+  @apply transition-all duration-300 transform scale-100 hover:scale-105
 }
 
 .ios-btn{
@@ -659,7 +637,7 @@ Nearby Sec
   @apply py-2 md:py-3 w-[calc(50%_-_5px)] min-w-0 2xl:min-w-[200px];
 }
 .near-location .store-link .view-details{
-  @apply py-2 leading-6 md:py-3 w-[calc(50%_-_5px)] min-w-0 2xl:min-w-[200px] bg-blue hover:bg-dark_blue text-white rounded ml-2.5 transition-all duration-300;
+  @apply py-2 leading-6 md:py-3 w-[calc(50%_-_5px)] min-w-0 2xl:min-w-[200px] bg-red hover:bg-dark_red text-white rounded ml-2.5 transition-all duration-300;
 }
 
 .nearby-sec #splide-nearby{
@@ -694,7 +672,7 @@ Social Links
   @apply hidden lg:inline-flex flex-wrap items-center leading-none; 
 }
 .social-links li{
-  @apply mx-4;
+  @apply mx-3;
 }
 .social-links a{
   @apply inline-flex w-5 h-5 items-center justify-center align-middle transition-all duration-200 opacity-100 transform scale-100 hover:scale-110;
@@ -733,8 +711,11 @@ Footer
 .site-footer a{
   @apply transition-all duration-300 hover:underline
 }
-.signup-newsletter{
-  @apply bg-dark_black relative top-0 hover:-top-1 hover:!no-underline py-[7px] lg:py-3 px-4 uppercase font-semibold inline-block align-middle transition-all duration-300;
+.newsletter{
+  @apply text-center py-[15px]
+}
+.signup-newsletter{	
+  @apply bg-red text-white hover:bg-dark_red hover:!no-underline py-2.5 lg:py-[13px] px-4 font-semibold inline-block align-middle transition-all duration-300 w-full text-center max-w-[260px] lg:max-w-[300px] rounded;	
 }
 
 .site-footer .footer-links{
@@ -748,6 +729,9 @@ Footer
 }
 .footer-address p{
   @apply leading-[22px] lg:leading-[27px] first:text-sm first:lg:text-base first:font-semibold
+}
+.site-footer .social-links{
+  @apply flex w-full text-center justify-center mt-5 lg:mt-0;
 }
 .site-footer .social-links a:hover{
   @apply no-underline
